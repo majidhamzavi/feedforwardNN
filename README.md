@@ -5,4 +5,4 @@ In this repository, I will explain how to build a simple forward neural network 
 
 For the second hidden layer, weight would have dimensions as 512 * 512 and the same dimensions for biases. Again, we utilize the ReLU activation function. Therefore, h1 = h0[10000 * 512] .dot w1[512 * 512] + b1[512 * 1].
 
-In the last layer, based on the matrix algebra, wight is a matrix with dimensions 512 * 10 and for bias, it is a 10 * 1 matrix. So, Out = h1[10000 * 512] .dot w2[512 * 10] + b2[10 * 1] and its dimensions would be 10000 * 1 and should be compared to Y.
+In the last layer, based on the matrix algebra, wight is a matrix with dimensions 512 * 10 and for bias, it is a 10 * 1 matrix. So, Out = h1[10000 * 512] .dot w2[512 * 10] + b2[10 * 1] and its dimensions would be 10000 * 10 and getting its argmax for each row it reduces to 10000 * 1, then should be compared to Y.
